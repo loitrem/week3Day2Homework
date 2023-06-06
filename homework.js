@@ -169,3 +169,39 @@ for (let i = 0; i< 2;i++){
 
 //after exercising
 console.log(timmy.weight, "after exercising");
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//CHEF MAKES DINNER - below
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Dinner {
+
+    constructor(appetizer, entree, dessert){
+        this.appetizer = appetizer;
+        this.entree = entree;
+        this.dessert = dessert;
+    }
+}
+
+class Chef {
+
+    constructor(name){
+        this.name = name;
+
+    }
+
+    order(app, ent, des){
+
+        let dinner = new Dinner(app, ent, des);
+
+        console.log("Dinner will be", dinner);
+    }
+
+}
+
+let chefBob = new Chef("Bob");
+chefBob.order("onion rings", "steak", "ice cream");
+
+chefBob.order("loaded fries", "salad", "pie");
+
+chefBob.order("fried cheese sticks", "cheesburger", "cake");
