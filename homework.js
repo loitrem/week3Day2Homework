@@ -170,6 +170,7 @@ for (let i = 0; i< 2;i++){
 //after exercising
 console.log(timmy.weight, "after exercising");
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CHEF MAKES DINNER - below
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -185,11 +186,6 @@ class Dinner {
 
 class Chef {
 
-    constructor(name){
-        this.name = name;
-
-    }
-
     order(app, ent, des){
 
         let dinner = new Dinner(app, ent, des);
@@ -199,7 +195,7 @@ class Chef {
 
 }
 
-let chefBob = new Chef("Bob");
+let chefBob = new Chef();
 chefBob.order("onion rings", "steak", "ice cream");
 
 chefBob.order("loaded fries", "salad", "pie");
