@@ -190,7 +190,7 @@ class Chef {
 
         let dinner = new Dinner(app, ent, des);
 
-        console.log("Dinner will be", dinner);
+        console.log(`Dinner will be ${dinner.appetizer} then ${dinner.entree} for the main course and ${dinner.dessert} for dessert`);
     }
 
 }
